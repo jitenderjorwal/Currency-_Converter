@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.darkMode{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color:black;
+    
+}
+
+.lightMode{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    background:linear-gradient(90deg,black,red,
+    black);
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* background-color: black; */
+    /* background:linear-gradient(90deg,black,red,
+    black); */
+}
+
+.circle1,
+.circle2 {
+    /* width: 0;
+    height: 0;
+    border-top: 100px solid red;
+    border-right: 100px solid transparent; */
+
+
+    background: white;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.1)
+    );
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1 {
+    top: 10%;
+    left: 10%;
+    transform: translate(-20%, -20%);
+}
+
+.circle2 {
+    top: 70%;
+    left: 80%;
+    transform: translate(-40%, -40%);
+}
+
+.glass-card {
+    background: white;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.2)
+    );
+    backdrop-filter: blur(1rem);
+    width: 70%;
+    height: 70%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.493);
+}
+
+.container>button{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 1.8rem;
+    background-color: transparent;
+    border: none;
+}
+
+.container>button>i{
+    color: white;
+}
+
+
+.glass-card>h2{
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0 0 1rem black;
+    position: absolute;
+    top: 5%;
+}
+
+form{
+    margin: 1rem;
+    color: white;
+   width: 100%;
+}
+
+.amount{
+    position: absolute;
+    top: 20%;
+    right: 36%;
+}
+
+.amount>input{
+    width: 15rem;
+    height:2.5rem;
+    border: 1px solid;
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.404);
+    color: white;
+    padding: 5px;
+    outline: none;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+.amount>input::placeholder{
+    color: rgba(255, 255, 255, 0.678);
+}
+
+.dropDown{
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+.from,.to{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.select_dropdown{
+    width: 12rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius:0.75rem ;
+    background:transparent;
+    padding: 1px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.493);
+
+}
+
+.select_dropdown:hover{
+    background-color: rgba(0, 0, 0, 0.253);
+    border:2px solid white;
+}
+
+.from>p{
+    position:relative;
+    font-size: 1.5rem;
+    margin:0 3rem 0 0;
+}
+
+.to>p{
+    position:relative;
+    font-size: 1.5rem;
+    margin:0 3rem 0 3rem;
+}
+
+.select_dropdown>img{
+    width: 40px;
+    margin: 1px;
+}
+
+.select_dropdown select{
+    outline: none;
+    border: none;
+    width: 8rem;
+    height: 2rem;
+    padding: 1px;
+    text-align: center;
+    font-size: 1.5rem;
+    background: none;
+    color: white;
+    /* color: white; */
+}
+
+select>option{
+    color :black;
+}
+
+
+
+.msg{
+    position: absolute;
+    bottom: 5rem;
+    left: 6rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    font-size:1.5rem
+}
+
+form>button{
+    position: absolute;
+    right: 5rem;
+    bottom: 5rem;
+    width:10rem;
+    padding: 10px;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.493);
+    background: transparent;
+}
+
+form>button:hover{
+    color:white;
+    background:blue;
+}
